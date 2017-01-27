@@ -5,9 +5,82 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
-  <backgrounds name="background"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_hitbox</sprite>
+    <sprite>sprites\spr_sollid</sprite>
+    <sprite>sprites\spr_arm</sprite>
+    <sprite>sprites\spr_halfSolid</sprite>
+    <sprite>sprites\spr_halfSolidSolid</sprite>
+    <sprite>sprites\spr_grass</sprite>
+    <sprite>sprites\spr_fireball</sprite>
+    <sprite>sprites\spr_darkness</sprite>
+    <sprites name="Player">
+      <sprite>sprites\spr_player</sprite>
+      <sprite>sprites\spr_playerIdle</sprite>
+      <sprite>sprites\spr_playerPunch</sprite>
+      <sprite>sprites\spr_playerFalling</sprite>
+      <sprite>sprites\spr_playerDashing</sprite>
+      <sprite>sprites\spr_playerSpear</sprite>
+    </sprites>
+    <sprite>sprites\spr_spear</sprite>
+    <sprite>sprites\spr_inventory</sprite>
+    <sprite>sprites\spr_forcePickup</sprite>
+    <sprite>sprites\spr_spearPickup</sprite>
+    <sprite>sprites\spr_spearConsumable</sprite>
+    <sprite>sprites\spr_plankPickup</sprite>
+    <sprite>sprites\spr_plank</sprite>
+  </sprites>
+  <backgrounds name="background">
+    <background>background\tile_grass</background>
+  </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_invDisplayDraw.gml</script>
+    <script>scripts\scr_checkId.gml</script>
+    <script>scripts\scr_clickedTrigger.gml</script>
+    <script>scripts\checkSpace.gml</script>
+    <script>scripts\commands.gml</script>
+    <script>scripts\checkWeight.gml</script>
+    <scripts name="Waste">
+      <script>scripts\scr_dropObject.gml</script>
+      <script>scripts\scr_objectPickup.gml</script>
+      <script>scripts\scr_checkIfEmpty.gml</script>
+      <script>scripts\scr_addToInv.gml</script>
+      <script>scripts\scr_checkObjWeight.gml</script>
+    </scripts>
+    <script>scripts\itemLeftReleased.gml</script>
+    <script>scripts\checkInvNum.gml</script>
+    <script>scripts\isInInv.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_invDisplay</font>
+    <font>fonts\fnt_default</font>
+  </fonts>
+  <objects name="objects">
+    <object>objects\obj_player</object>
+    <object>objects\obj_solid</object>
+    <object>objects\obj_playerArm</object>
+    <object>objects\obj_halfSolid</object>
+    <object>objects\obj_halfSollidSolid</object>
+    <object>objects\obj_playerBasicVar</object>
+    <object>objects\obj_forcePickup</object>
+    <object>objects\obj_spearPickup</object>
+    <object>objects\obj_spearCon</object>
+    <object>objects\obj_plankPickup</object>
+    <object>objects\obj_hitbox</object>
+    <object>objects\obj_darkness</object>
+    <object>objects\obj_spear</object>
+    <objects name="Inventory">
+      <object>objects\obj_inv1</object>
+      <object>objects\obj_invParent</object>
+      <object>objects\obj_inv1_2</object>
+      <object>objects\obj_equiped1</object>
+    </objects>
+    <object>objects\obj_plank</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\room0</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
