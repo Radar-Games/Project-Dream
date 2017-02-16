@@ -27,6 +27,84 @@
             <kind>1</kind>
             <string>width = sprite_get_width(spr_solid);
 height = sprite_get_height(spr_solid);
+ = 0;
+potentialx = 0;
+potentialy
+
+h1 = 0;
+
+show_debug_message(string(ds_grid_get(global.collisonMap, x, y)));
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(h1 &lt;= 32){
+    ds_grid_add(global.collisonMap, x, y+h1, true);
+    ds_grid_add(global.collisonMap, x+1, y+h1, true);
+    ds_grid_add(global.collisonMap, x+2, y+h1, true);
+    ds_grid_add(global.collisonMap, x+3, y+h1, true);
+    ds_grid_add(global.collisonMap, x+4, y+h1, true);
+    ds_grid_add(global.collisonMap, x+5, y+h1, true);
+    ds_grid_add(global.collisonMap, x+6, y+h1, true);
+    ds_grid_add(global.collisonMap, x+7, y+h1, true);
+    ds_grid_add(global.collisonMap, x+8, y+h1, true);
+    ds_grid_add(global.collisonMap, x+9, y+h1, true);
+    ds_grid_add(global.collisonMap, x+10, y+h1, true);
+    ds_grid_add(global.collisonMap, x+11, y+h1, true);
+    ds_grid_add(global.collisonMap, x+12, y+h1, true);
+    ds_grid_add(global.collisonMap, x+13, y+h1, true);
+    ds_grid_add(global.collisonMap, x+14, y+h1, true);
+    ds_grid_add(global.collisonMap, x+15, y+h1, true);
+    ds_grid_add(global.collisonMap, x+16, y+h1, true);
+    ds_grid_add(global.collisonMap, x+17, y+h1, true);
+    ds_grid_add(global.collisonMap, x+18, y+h1, true);
+    ds_grid_add(global.collisonMap, x+19, y+h1, true);
+    ds_grid_add(global.collisonMap, x+20, y+h1, true);
+    ds_grid_add(global.collisonMap, x+21, y+h1, true);
+    ds_grid_add(global.collisonMap, x+22, y+h1, true);
+    ds_grid_add(global.collisonMap, x+23, y+h1, true);
+    ds_grid_add(global.collisonMap, x+24, y+h1, true);
+    ds_grid_add(global.collisonMap, x+25, y+h1, true);
+    ds_grid_add(global.collisonMap, x+26, y+h1, true);
+    ds_grid_add(global.collisonMap, x+27, y+h1, true);
+    ds_grid_add(global.collisonMap, x+28, y+h1, true);
+    ds_grid_add(global.collisonMap, x+29, y+h1, true);
+    ds_grid_add(global.collisonMap, x+30, y+h1, true);
+    ds_grid_add(global.collisonMap, x+31, y+h1, true);
+    ds_grid_add(global.collisonMap, x+32, y+h1, true);
+    h1 += 1
+}  
+/*    
+    if(w1 == width){
+        h1 += 1;
+        w1 = 0;
+    }else{
+        w1 += 1;
+    }
+    ds_grid_add(global.collisonMap, x+w1, y+h1, true);
+*/
+show_debug_message(string(ds_grid_get(global.collisonMap, x, y)));
+show_debug_message(string(ds_grid_get(global.collisonMap, x+1, y)));
+show_debug_message(string(ds_grid_get(global.collisonMap, x+2, y)));
+show_debug_message(string(ds_grid_get(global.collisonMap, x+3, y)));
 </string>
           </argument>
         </arguments>
